@@ -1,0 +1,20 @@
+[user]
+	name = Opeyemi Sonusi
+	email = opeyemi.sonusi@surveysampling.com
+[core]
+	excludesfile = /Users/opeyemi_sonusi/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	wow = fetch
+	pu = push origin master
+	fr = !sh -c '(git fetch && git rebase)'
+	ci = commit
+	co = checkout
+
+[push]
+	default = matching
